@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Chart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1 class="text-3xl font-bold text-center mt-8 mb-8">My Shopping Card</h1>
+    </header>
+    <main class="w-10/12 mx-auto bg-gray-100 p-12 mb-12 rounded-lg">
+        <!-- Phone Section  -->
+        <div class="w-11/12 mx-auto mb-8">
+            <div class="grid grid-cols-8 gap-4 bg-white p-4 rounded-lg items-center font-bold">
+                <div class="col-span-2">
+                    <img class="w-9/12" src="images/iPhone-13-Pro-Max.jpg" alt="">
+                </div>
+                <div class="col-span-2 text-xl"><h2>iPhone 11 128GB Black</h2></div>
+                <div class="col-span-2 grid grid-cols-3 gap-2rounded-lg items-center p-4">
+                    <i id="phone-minus" class="fa-solid fa-minus cursor-pointer"></i>
+                    <input class="text-center bg-gray-200 rounded-md" type="number" name="" id="phone-qtn" min="0"  value="1">
+                    <i id="phone-plus" class="fa-solid fa-plus ml-4 cursor-pointer"></i>
+                </div>
+                <div class=""><p>$<span id="phone-price">1219</span></p></div>
+                <div class="text-3xl text-red-500"><i id="phone-close" class="fa-solid fa-xmark"></i></div>
+            </div>
+        </div>
+        <!-- Casing Section  -->
+        <div class="w-11/12 mx-auto mb-8">
+            <div class="grid grid-cols-8 gap-4 bg-white p-4 rounded-lg items-center font-bold">
+                <div class="col-span-2">
+                    <img class="w-8/12" src="images/iphone-Casing.jpg" alt="">
+                </div>
+                <div class="col-span-2 text-xl"><h2>iPhone 11 128GB Case - Black</h2></div>
+                <div class="col-span-2 grid grid-cols-3 gap-2 rounded-lg items-center p-4">
+                    <i id="case-minus" class="fa-solid fa-minus cursor-pointer"></i>
+                    <input class="text-center bg-gray-200 rounded-md" type="number" name="" id="case-qtn"  min="0" value="1">
+                    <i id="case-plus" class="fa-solid fa-plus ml-4 cursor-pointer"></i>
+                </div>
+                <div class=""><p>$<span id="case-price">59</span></p></div>
+                <div class="text-3xl text-red-500"><i id="case-close" class="fa-solid fa-xmark"></i></div>
+            </div>
+        </div>
+        <!-- Total Section  -->
+        <div class="w-11/12 mx-auto mb-8">
+            <div class="grid grid-cols-2 gap-4 bg-white p-4 rounded-lg items-center font-bold">
+                <div class="text-xl font-bold pl-8">
+                    <h3>Sub Total:</h3>
+                    <h3>Tax:</h3>
+                    <h3>Total:</h3>
+                </div>
+                <div class="text-xl font-bold pl-8 text-right pr-8">
+                    <h3>$<span>1278</span></h3>
+                    <h3>$<span>0</span></h3>
+                    <h3>$ <span>1278</span></h3>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-end mr-10"><button class="items-end font-bold bg-green-500 p-4 text-white rounded-lg hover:text-gray-300 hover:bg-green-800 border-2" type="submit">Checkout Now</button>
+        </div>
+    </main>
+
+    <script src="js/comon.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
